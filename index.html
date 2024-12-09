@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Sub Domain</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Kustomisasi font dan animasi */
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+      font-family: 'Press Start 2P', cursive;
+    }
+  </style>
+</head>
+<body class="bg-black text-green-400">
+
+  <!-- Container utama dengan beberapa elemen -->
+  <div class="h-screen flex flex-col items-center justify-center space-y-8">
+    <div class="bg-black p-6 rounded-lg shadow-xl border-2 border-green-400 text-center w-full max-w-xl">
+      <p class="text-4xl font-bold animate-pulse">Welcome to Sub Domain</p>
+      <p class="text-sm opacity-75">System Booting... Initiating secure environment...</p>
+      <div class="mt-4 bg-green-600 p-4 rounded-lg shadow-md">
+        <pre class="text-xs">
+> Initiating root access...
+> IP Address: 192.168.1.1
+> Port: 8080
+> Command Execution Mode: ACTIVE
+> Connecting to secure servers...
+        </pre>
+      </div>
+    </div>
+
+    <!-- Animasi dan terminal-like progress bar -->
+    <div class="w-full max-w-xl bg-gray-800 p-4 rounded-lg shadow-xl border-2 border-green-400">
+      <p class="text-sm mb-2">System Status:</p>
+      <div class="flex items-center justify-between mb-4">
+        <p class="text-xs">Loading...</p>
+        <p class="text-xs">10%</p>
+      </div>
+      <div class="w-full h-1 bg-gray-600 rounded">
+        <div class="h-1 bg-green-400 w-1/10 rounded"></div>
+      </div>
+    </div>
+
+    <!-- Virtual terminal animation -->
+    <div class="w-full max-w-xl p-4 bg-black border-2 border-green-400 rounded-lg shadow-xl">
+      <pre class="text-xs">
+> root@subdomain:~$ ls /var/log
+auth.log  syslog  kern.log  boot.log  messages
+> root@subdomain:~$ cat /var/log/syslog
+[INFO] Starting system diagnostics...
+[INFO] Running security check...
+[ALERT] Unusual activity detected.
+> root@subdomain:~$ exit
+      </pre>
+    </div>
+
+    <!-- Floating "hacker" terminal window -->
+    <div class="absolute top-10 right-10 p-6 bg-green-500 text-black rounded-lg shadow-xl opacity-90">
+      <p class="text-xs font-bold">Terminal</p>
+      <pre class="text-xs">
+> connected to darknet server...
+> Decrypting data...
+> Command received: access_granted
+      </pre>
+    </div>
+  </div>
+
+</body>
+</html>
